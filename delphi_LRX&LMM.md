@@ -130,9 +130,4 @@ image1.picture.loadfromfile('D:\素材' + inttostr(i) + '.jpg');
     button2.enabled := True;
 ```
 
-13. datetimepicker获取Date
-```
-label1.Caption := DateToStr(DateTimePicker1.date);
-```
-
-14. 
+13. 
