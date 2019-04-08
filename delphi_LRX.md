@@ -25,4 +25,20 @@
   f := 32 + 9*c/5;
   label1.caption := format('摄氏%7.2f度 = 华氏%7.2f度',[c, f]);
   ```
-  
+5. 鸡兔同笼
+```
+var
+  h, f, x, y: Integer;
+  s: string;
+begin
+  h := StrToInt(InputBox('请输入', '鸡和兔的总头数','0'));
+  s := Format('鸡和兔的总脚数(大于%d的偶数)', [2*h]);
+  f := StrToInt(InputBox('请输入', s, '0'));
+  x := (4 * h - f) div 2;
+  y := (f - 2 * h) div 2;
+  Label2.Caption := Format('设笼中鸡和兔的总头数为%d, 总脚数为%d.', [h, f]);
+  Label3.Caption := Format('则笼中鸡有%d只，兔有%d只。', [x, y]);
+end;
+```
+
+6. 
