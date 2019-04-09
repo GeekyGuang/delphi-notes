@@ -201,7 +201,29 @@ begin
 end
 ```
 
-23. 
+23. 时间转字符串
+```
+DateToStr(DateTimePicker1.Date)
+```
+
+24. oncreate事件写了setfocus会提示"cannot focus a disabled or invisible windows"
+
+25. 三种循环
+```
+  //求a到b的奇偶数和
+  for i := a to b do
+    begin
+      if (i mod 2 = 0) then sum1 := sum1 + i  //如果是i是偶数则加到偶数上
+      else sum2 := sum2 + i;            //如果i是奇数则加到奇数上
+    end;
+
+while e1 do begin ... end;
+
+repeat ... until e1; //不需要begin end
+```
+
+
+
 
 
 
