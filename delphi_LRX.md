@@ -135,4 +135,73 @@ image1.picture.loadfromfile('D:\素材' + inttostr(i) + '.jpg');
 label1.Caption := DateToStr(DateTimePicker1.date);
 ```
 
-14. 
+14. x平方： sqr(x)
+```
+  if x > 0 then y := Sqr(x) + 2 * x + 3
+  else y := 2 - 4 * x;
+```
+
+15. Tedit密码显示，PasswordChar的 #0 改成 *
+
+16. 嵌套if...else 
+```
+if then
+  begin
+  end //else前的end不能有分号
+else
+ begin
+ end;
+```
+
+17. case 
+```
+case e1 of
+   x1: 语句1；
+   x2: begin
+       ...
+       end;
+    .
+    .
+    .
+   xn: 语句n;
+   [else 可选;]
+End; 
+```
+
+18. 设置字体属性
+```
+  label1.Font.Name
+  label1.Font.Size
+  label1.Font.Color
+  label1.Font.Alignment
+```
+19. radiogroup组件，itemindex的值表示选中哪个
+
+20. copy()函数
+```
+copy(m, 1, 3) //从m的字符串的第1位开始拷贝3位
+
+copy(strmsg,1,Length(strmsg)-1);//去掉字符串末尾逗号
+```
+
+21. checkbox
+```
+if CheckBox1.Checked then strmsg := strmsg + CheckBox1.Caption + ',';
+CheckBox1.Checked := False;
+```
+
+22. 三个scrollbar事件相同，只需要写其中一个事件，其他的在onchange关联这个事件
+```
+begin
+  Panel1.Color := RGB(ScrollBar1.Position, ScrollBar2.Position, ScrollBar3.position);
+
+  label1.caption := '红色值：' + inttostr(ScrollBar1.Position);
+  label2.caption := '绿色值：' + inttostr(ScrollBar2.Position);
+  label3.caption := '蓝色值：' + inttostr(ScrollBar3.Position);
+end
+```
+
+23. 
+
+
+
