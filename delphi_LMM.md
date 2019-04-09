@@ -222,6 +222,20 @@ while e1 do begin ... end;
 repeat ... until e1; //不需要begin end
 ```
 
+26. listbox
+```
+ListBox1.ItemIndex := i; //选中第i + 1项
+ListBox1.Items[i];  //获取第i + 1项
+ListBox2.Items.Add(ListBox1.Items[i]);  //新增box2中的第i+1项
+ListBox1.Items.Delete(i);  //删除第i + 1项
+listbox1.items.clear;  //清空
+listbox1.selected[i];  //第i+1项被选中
+```
+
+27. 
+
+
+
 
 
 
