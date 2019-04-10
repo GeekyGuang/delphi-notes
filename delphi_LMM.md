@@ -232,7 +232,91 @@ listbox1.items.clear;  //清空
 listbox1.selected[i];  //第i+1项被选中
 ```
 
-27. 
+27. 一维数组的定义
+```
+var a:array[0..10] of integer;
+```
+
+28. 冒泡排序
+```
+   for i := 1 to 10 do
+     for j := i to 10 do
+       if a[i] > a[j] then
+       begin
+         switch := a[i];
+         a[i] := a[j];
+         a[j] := switch;
+       end;
+```
+
+29. 二维数组
+```
+var b:array[0..5, 'a'..'z'] of string; // 类比成数据库表格
+```
+
+30. with语句
+```
+edit1.clear;
+edit1.setfocus;
+edit1.text := '确定';
+edit1.font.name := '黑体'；
+edit1.font.color := clred;
+
+简化为
+with edit1 do
+Begin
+clear; setfocus;
+text := '确定'；
+font.name := '黑体'；
+font.color := clred;
+end;
+```
+
+31. break退出循环
+    continue退出本次循环，不执行continue之后的语句，执行下一次循环
+    exit退出所在函数
+
+32. 第7章最后综合训练，我自己写的代码比书上的更简洁
+```
+procedure TForm1.Button1Click(Sender: TObject);
+var
+  i, j : Integer;
+  a:array[1..10, 1..10] of Integer;
+  s : string;
+begin
+  // 生成方阵
+  for i := 1 to 10 do
+    begin
+      s := '';
+      for j := 1 to 10 do
+        begin
+          if (i = j) or (i + j = 11) then
+            a[i, j] := 2 else a[i, j] := 1;
+          s := s + IntToStr(a[i, j]) + ' ';
+        end;
+      ListBox1.Items.Add(s);
+    end;
+end;
+
+
+procedure TForm1.Button2Click(Sender: TObject);
+var
+  i, j : Integer;
+  s : string;
+begin
+  // 生成三角阵
+  for i := 1 to 10 do
+    begin
+      s := '';
+      for j := 1 to i do
+        s := s + IntToStr(j) + ' ';
+      ListBox2.Items.Add(s);
+    end;
+end;
+```
+> 编程不能被牵着鼻子走，不能固定思维，不能拘泥于形式，不能死记硬背
+> 自己主动思考，需要什么就用什么，不要怀疑自己，就像搭积木
+
 
 
 
