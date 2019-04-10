@@ -317,6 +317,65 @@ end;
 > 编程不能被牵着鼻子走，不能固定思维，不能拘泥于形式，不能死记硬背
 > 自己主动思考，需要什么就用什么，不要怀疑自己，就像搭积木
 
+33. 过程
+声明过程原型
+```
+  private
+    { Private declarations }
+    procedure clearing;      // 没有参数的过程
+    procedure area(l:single; w:single);  // 多个形参用分号隔开
+```
+
+ctrl + shift + C自动跳转过程定义
+
+```
+procedure TForm1.area(l, w: single);
+var s:Single;
+begin
+  s := l * w;
+  Edit3.Text := FloatToStr(s);
+end;
+
+procedure TForm1.clearing;
+begin
+  Edit1.Clear;  Edit2.Clear; Edit3.Clear;
+end;
+```
+
+调用过程
+
+```
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  area(StrToFloat(Edit1.text), StrToFloat(Edit2.text))  // 实参用逗号隔开
+end;
+
+```
+
+34. 函数
+> 函数与过程的区别是函数有返回值
+```
+  private
+    { Private declarations }
+    function jc(n:integer):Integer; // 函数名(形参):返回类型
+```
+```
+function TForm1.jc(n: integer): Integer;
+var
+  i, nn:Integer;
+begin
+  nn := 1;
+  for i := 1 to n do
+    begin
+      nn := nn * i;      //求n的阶乘
+    end;
+  Result := nn;   //将结果返回到系统变量result
+end;
+```
+
+
+
+
 
 
 
