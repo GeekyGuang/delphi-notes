@@ -372,6 +372,27 @@ begin
   Result := nn;   //将结果返回到系统变量result
 end;
 ```
+35. 遇到新的或奇怪的语法，不必抵触，试着理解其含义，学会使用它，
+  “清空你的杯子，方能再行注满。”
+
+36. 菜单栏mainmenu设置
+```
+  N12.Checked := not N12.Checked;  //打开check但是不check
+  if N12.Checked = true then
+  Memo1.Font.Style := Memo1.Font.Style + [fsbold] else
+  Memo1.Font.Style := Memo1.Font.Style - [fsbold];
+```
+
+37. 工具栏
+> 通过imagelist添加图标，imageindex属性指定图片
+> 通过tbsCheck属性和grouped属性设为单选或复选框
+
+38. 状态栏
+> 在panels editor里可以设置TStatusPanel的width
+
+39. 
+
+
 
 
 
