@@ -391,8 +391,6 @@ end;
 38. 状态栏
 > 在panels editor里可以设置TStatusPanel的width
 
-39. 
-
 
 
 
