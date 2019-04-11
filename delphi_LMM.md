@@ -382,6 +382,7 @@ end;
   Memo1.Font.Style := Memo1.Font.Style + [fsbold] else
   Memo1.Font.Style := Memo1.Font.Style - [fsbold];
 ```
+> caption设为 - 即为分隔符
 
 37. 工具栏
 > 通过imagelist添加图标，imageindex属性指定图片
