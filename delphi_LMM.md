@@ -391,6 +391,9 @@ end;
 38. 状态栏
 > 在panels editor里可以设置TStatusPanel的width
 
+39. 拖控件拖不到panel上，在左上角的structure里拖
+
+
 
 
 
