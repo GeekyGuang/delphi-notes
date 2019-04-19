@@ -47,3 +47,57 @@ end;
     end;
 ```
 
+5. for计数器循环
+```
+var
+  S: string;
+  I: Integer;
+begin
+  S := 'Hello world';
+  for I := Low (S) to High (S) do
+    Show(S[I]);
+end;
+```
+
+6. for-in
+```
+var
+  S: string;
+  Ch: Char;
+begin
+  S := 'Hello world';
+  for Ch in S do
+    Show(Ch);
+end;
+```
+
+7. while..do
+```
+var
+  I: Integer;
+begin
+  Randomize;  //重置随机数依据
+  I := 1;
+  while I < 500 do
+  begin
+    Show ('Random Number: ' + IntToStr (I));
+    I := I + Random (100);
+  end;
+end;
+```
+
+8. repeat..until
+```
+repeat 
+  i := i + 1;
+  inc(j, 2);  // 递增函数
+  until (i > 100) ro (j > 100);
+```
+
+9. break and continue
+> break: 跳出当前循环
+> continue: 跳至下一次循环
+
+10. 不要使用goto语句
+
+
