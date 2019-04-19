@@ -69,6 +69,7 @@ uses
 
 10. 自定义型别
 ```
+// 可以在implementation里定义
 type
 
   Tuppercase = 'A'..'Z';
