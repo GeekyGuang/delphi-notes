@@ -49,7 +49,7 @@ resourcestring
 > 在interface声明的全局变量整个程序都可见
 > 在implementation声明的全局变量只在整个单元内可见
 
-8. show过程的定义，这里为什么有个const？
+8. show过程的定义，这里为什么有个const？定义为常量无法被更改
 ```
 -- 声明
 procedure Show (const msg: string);

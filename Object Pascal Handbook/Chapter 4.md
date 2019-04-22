@@ -6,7 +6,7 @@
 3. procedure或function可以直接在implementation里定义(无需声明)
    如果还没来得及定义就要调用则可以提前声明，用forward
 ```
-procedure DoubleHello; forward;
+procedure DoubleHello; forward; 
 ```
 
 4. MessageDlg

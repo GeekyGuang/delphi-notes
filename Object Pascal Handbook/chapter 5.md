@@ -112,7 +112,7 @@ end;
 ```
 // 定义
 type
-  TMyDate = packed record
+  TMyDate = packed record  // packed不是必须的，意思是使用最小的内存空间，即使存取速度会慢
     Year: Integer;
     Month: Byte;
     Day: Byte;
@@ -130,3 +130,20 @@ begin
   Show ('Record size is ' + SizeOf (BirthDay).ToString);
 end;
 ```
+
+```
+function ShowMyDate( Mydate: TMyDate): string;  // 注意每个声明都以分号结尾
+begin
+  Result := Mydate.year.ToString + '.' +
+            Mydate.month.ToString + '.' +
+            Mydate.day.ToString;
+end;
+```
+
+7. 使用with语句可能导致隐藏的错误，谨慎使用
+
+8. 
+
+
+
+
